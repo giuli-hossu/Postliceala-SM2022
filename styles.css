@@ -1,0 +1,306 @@
+body {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+span {
+    color: #8f8f8f;
+}
+
+em {
+    color: #005550;
+}
+
+
+@font-face {
+    font-family: Metropolis-Bold;
+    src: url("fonts/Metropolis-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Metropolis-Regular;
+    src: url("fonts/Metropolis-Regular.otf") format("opentype");
+}
+
+/*Heading*/
+.big-heading {
+    font-family: "Metropolis-Bold", serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+
+/*Sections*/
+.color-section {
+    /*background-color: #006a6a;*/
+    background-color: #E5FDF6;
+    width: 100%;
+
+}
+
+.white-section {
+    background-color: #fff;
+    width: 100%;
+}
+
+
+/*Navbar section*/
+/*.logo-img{*/
+/*    float: left;*/
+/*    width: 200px;*/
+/*    height: 90px;*/
+/*    margin: 10px 15px;*/
+/*}*/
+
+
+/*Navigation bar*/
+
+#navbar-section .container-fluid {
+    padding-left: 3.5%;
+}
+
+.navbar-brand {
+
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-custom {
+    background-color: #005550;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.title-image-container {
+    position: relative;
+}
+
+
+/*Title*/
+
+.title-paragraph{
+    padding-top: 7%;
+}
+
+.title-image {
+    width: 40%;
+    right: 30%;
+    margin: 35px;
+    padding-top: 7%;
+}
+
+
+/*Figcaption*/
+#about {
+    font-family: "Montserrat ", serif;
+}
+
+figure.animated_figure {
+    position: relative;
+    overflow: hidden; /*for the white slash*/
+    margin: 20px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+
+}
+
+.paragraph_figure {
+    font-family: "Montserrat ", serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #005550;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*text animation*/
+figure.animated_figure * {
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+figure.animated_figure img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4;
+}
+
+figure.animated_figure h2 {
+    position: absolute;
+    left: 93px;
+    right: 93px;
+    padding: 12px 12px;
+    top: 30%;
+    font-weight: 400;
+}
+
+figure.animated_figure:before {
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #E5FDF6;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(110deg) translateY(-30%);
+}
+
+
+figure.animated_figure h2 {
+    font-size: 2rem;
+    background: #005550;
+    color: #fff;
+}
+
+figure.animated_figure:hover img {
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+figure.animated_figure:hover h2 {
+    transform: rotate(-10deg) translate(-160%, 60%);
+}
+
+figure.animated_figure:hover:before {
+    transform: rotate(110deg) translateY(-160%);
+}
+
+figure .paragraph_figure {
+    opacity: 0;
+
+}
+
+figure:hover .paragraph_figure {
+    opacity: 1;
+
+}
+
+/*About*/
+
+.about_img {
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    margin: 10px auto;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+
+/*Features*/
+
+.nurses-img {
+    width: 15%;
+    height: 40%;
+}
+
+/*on hover image*/
+.line {
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #fff;
+    transition: all 800ms linear;
+}
+
+
+/*Features*/
+
+.secondIcons {
+    text-align: center;
+}
+
+.secondIcons:hover {
+    transform: scale(1.1);
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+
+
+}
+
+.f-icon {
+    /*color: #00B089*/
+    color: #005550;
+}
+
+/*Admitere*/
+.calendar-image {
+    width: 40%;
+    right: 30%;
+    margin: 35px;
+    transform: scaleX(-1);
+}
+.calendar-image-container {
+    position: relative;
+}
+
+.document-image {
+    width: 40%;
+    right: 30%;
+    margin: 35px;
+    transform: rotate(15deg);
+}
+.paragraph-adm{
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/*Press*/
+#press {
+    position: relative;
+    margin: auto;
+}
+
+.press-img {
+    margin: 20px 20px 50px;
+
+}
+
+/*Footer*/
+
+.footer-link{
+    color: #005550;
+    padding: 0px 10px;
+}
+.social-icon{
+    color: #005550;
+    padding-right: 10px;
+}
+
